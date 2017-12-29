@@ -1,0 +1,14 @@
+<div class="row container">
+  <div class="col-4">
+    <img class="img-fluid rounded-circle" src="http://lorempixel.com/400/400/">
+  </div>
+  <div class="col text-center">
+    <h1>About</h1>
+
+    <p>
+      {% for page in site.pages %}{% if page.name =="about.md" %}
+      {{ page.content }}
+      {% endif %}{% endfor %}
+    </p>
+  </div>
+</div>
