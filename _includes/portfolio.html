@@ -2,19 +2,25 @@
   <h1>Portfolio</h1>
   <hr class="border-primary">
 
-  <div class="card-columns">
+  {% include portfolio_nav.html %}
 
-    {% for project in site.projects %}
-    <div class="card">
-      <img class="card-img" src="{{ project.images[0] }}" alt="{{ project.project_name }} thumbnail">
-      <div class="card-overlay">
-        <span class="d-inline-flex h-100">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg>
-        </span>
+  <div class="tab-content" id="pills-tabContent">
+    {% for category in site.categories %}
+    <div id="pills-{{ category[0] }}" class="card-columns tab-pane fade {% if forloop.first %}show active{% endif %}" role="tabpanel">
+
+      {% for post in category[1] %}
+      <div class="card">
+        <img class="card-img" src="{{ post.images[0] }}" alt="{{ post.project_name }} thumbnail">
+        <div class="card-overlay">
+          <span class="d-inline-flex h-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg>
+          </span>
+        </div>
       </div>
+      {% endfor %}
+
     </div>
     {% endfor %}
-
   </div>
 
 </section>
