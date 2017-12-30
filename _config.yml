@@ -4,3 +4,5 @@ job: Duis suscipit varius nulla bibendum
 jobtitle: Duis suscipit
 copyright: Copyright © 2017 - Tincidunt Non. All Rights Reserved.
 thanks: Proin aliquam, eros eget vulputate!
+collections:
+  - projects
