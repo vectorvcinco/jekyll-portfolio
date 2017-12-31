@@ -1,0 +1,27 @@
+header {
+  background-image: url("img/header.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  padding-top: 250px;
+
+  .brand-heading {
+    font-size: $spacer*8;
+    text-shadow: 2px 2px 20px $black;
+  }
+
+  .intro-welcome {
+    font-size: $spacer*3;
+    text-shadow: 2px 2px 20px $black;
+  }
+
+  .page-scroll {
+    svg {
+      height: 75px;
+      fill: rgba($white, 0.9);
+    }
+  }
+
+}
