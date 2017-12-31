@@ -1,5 +1,7 @@
 *.gem
 .bundle
 .sass-cache
+_posts
 _site
+assets/img/portfolio
 Gemfile.lock
