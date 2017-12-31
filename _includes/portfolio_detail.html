@@ -12,7 +12,7 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-sm-7">
-            {% include portfolio_carousel.html images=post.images name=post.project_name %}
+            {% include portfolio_carousel.html images=post.images project_name=post.project_name %}
           </div>
           <div class="col px-2 text-left">
             {{ post.content }}
