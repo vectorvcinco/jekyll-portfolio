@@ -2,7 +2,7 @@
 
   {% for category in site.categories %}
   <li class="nav-item">
-    <a class="nav-link {% if forloop.first %}active{% endif %}" id="pills-{{ category[0] }}-tab" data-toggle="pill" href="#pills-{{ category[0] }}" role="tab">{{ category[0] | capitalize }}</a>
+    <a class="nav-link {% if forloop.first %}active{% endif %}" id="pills-{{ category[0] }}-tab" data-toggle="pill" href="#pills-{{ category[0] }}" role="tab">{{ category[0] | replace: "-", " " | capitalize }}</a>
   </li>
   {% endfor %}
 

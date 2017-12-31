@@ -1,7 +1,7 @@
 {% for post in site.posts %}
 
 <div class="modal fade" id="{{ post.project_name | url_encode }}-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">{{ post.project_name }}</h5>
@@ -10,11 +10,30 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="row">
+          <div class="col-sm-7">
+          </div>
+          <div class="col px-2 text-left">
+            {{ post.content }}
+          </div>
+        </div>
+        <hr class="bg-primary">
+        <div class="row">
+          <div class="col text-left text-secondary">
+            {% if post.client %}
+            <p><span class="font-weight-bold">Client:</span> {{ post.client }}</p>
+            {% endif %}
+            {% if post.materials %}
+            <p><span class="font-weight-bold">Meterials:</span> {{ post.materials }}</p>
+            {% endif %}
+            {% if post.fecha %}
+            <p><span class="font-weight-bold">Date:</span> {{ post.fecha }}</p>
+            {% endif %}
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
