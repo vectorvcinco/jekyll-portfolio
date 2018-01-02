@@ -19,4 +19,15 @@ body {
   @media (max-width: 500px) {
     height: 275px;
   }
+
+  a {
+    display: block;
+    width: $spacer*3;
+    fill: darken(theme-color(primary), 15%);
+
+    @media (max-width: 500px) {
+      width: $spacer*2;
+    }
+
+  }
 }
