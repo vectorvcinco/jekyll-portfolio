@@ -20,10 +20,18 @@ body {
     height: 275px;
   }
 
+  h5 {
+    color: darken($red, 5%);
+  }
+
   a {
     display: block;
     width: $spacer*3;
     fill: darken(theme-color(primary), 15%);
+
+    &:hover {
+      fill: darken(theme-color(primary), 25%);
+    }
 
     @media (max-width: 500px) {
       width: $spacer*2;
