@@ -8,6 +8,10 @@
 @import "portfolio";
 @import "header";
 
+body {
+  color: $gray-700;
+}
+
 hr {
   width: 120px;
   border-width: 6px;
