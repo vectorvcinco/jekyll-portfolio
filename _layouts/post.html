@@ -2,6 +2,9 @@
 layout: default
 ---
 <div class="container pt-3 navwrapper">
+  <h2 class="text-center">{{ page.project_name }}</h2>
+  <hr class="bg-primary">
+
   <div class="row">
     <div class="col-sm-7">
       {% include portfolio_carousel.html images=page.images project_name=page.project_name %}
@@ -10,7 +13,9 @@ layout: default
       {{ content }}
     </div>
   </div>
+
   <hr class="bg-primary">
+
   <div class="row">
     <div class="col text-left text-dark">
       {% if page.client %}
