@@ -10,7 +10,7 @@
   border-radius: calc(0.25rem - 1px);
   transition: background-color 0.5s;
 
-  svg {
+  svg.learnmore {
     height: 70px;
     fill: rgba(theme-color(primary), 0.7);
     margin-top: auto;
@@ -21,15 +21,17 @@
   &:hover {
     background-color: rgba($black, .5);
     cursor: zoom-in;
-    svg {
+    svg.learnmore {
       display: block;
     }
   }
+
   @media (max-width: 500px){
-    svg {
+    svg.learnmore {
       margin: 0 0 0 auto;
       display: block;
     }
+
     span {
       display: flex !important;
       align-items: flex-end;
