@@ -12,7 +12,7 @@
 
   svg {
     height: 70px;
-    fill: rgba($white, 0.9);
+    fill: rgba(theme-color(primary), 0.7);
     margin-top: auto;
     margin-bottom: auto;
     display: none;
@@ -24,16 +24,6 @@
     svg {
       display: block;
     }
-  }
-}
-
-.learnmore{
-  display: none;
-  svg {
-    height: 25px;
-  }
-  @media (max-width: 500px) {
-    display: inline;
   }
 }
 
