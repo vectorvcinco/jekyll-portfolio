@@ -1,10 +1,8 @@
 # portfolio
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+This Jekyll theme was originally designed for http://itzelschiaffini.github.io it contains a simple about section, a section divider, and a portfolio by categories.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+You'll be able to change most settings either in `_config.yml`, `assets` or in your own `about.md`
 
 
 ## Installation
@@ -12,13 +10,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "portfolio"
+gem "vv5-portfolio"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: portfolio
+theme: vv5-portfolio
 ```
 
 And then execute:
@@ -31,11 +29,54 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+You should create an `about.md` a `_config.yml` and an `index.md` they should include:
+
+### about.md
+
+In your frontmatter make sure you include these tags
+
+```yml
+---
+layout: page
+title: About
+welcome: Hi! my name is
+firstname: Jane
+lastname: Doe
+taglines:
+  - tagline1
+  - tagline2
+  - tagline3
+---
+```
+
+and in your content include an abstract of yourself
+
+### config.yml
+
+```
+title: Tincidunt non
+catchphrase: Proin aliquam, eros eget vulputate
+job: Duis suscipit varius null
+jobtitle: Duis suscipit
+copyright: Copyright © 2017 - Tincidunt Non. All Rights Reserved.
+thanks: Proin aliquam, eros eget vulputate!
+picture: /assets/brand/profile.jpg
+
+social:
+  instagram: youruser
+  email: youruser@gmail.com
+  tumblr: youruser
+  facebook: youruser
+  pinterest: youruser
+```
+
+### index.md
+Finally make sure your `index.md` layout is `home`
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/vectorvcinco/jekyll-portfolio. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

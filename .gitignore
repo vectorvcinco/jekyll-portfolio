@@ -4,4 +4,8 @@
 _posts
 _site
 assets/img/portfolio
+_config.yml
+about.md
+index.md
+
 Gemfile.lock
