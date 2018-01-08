@@ -1,26 +1,31 @@
 header {
-  background-image: url("img/header.jpg");
+  background-image: url("brand/header.jpg");
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  height: 100vh;
 
-  padding-top: 250px;
+  padding-top: $spacer*5;
 
-  .brand-heading {
-    font-size: $spacer*8;
-    text-shadow: 2px 2px 20px $black;
-  }
+  text-shadow: 2px 2px 20px $black;
 
   .intro-welcome {
-    font-size: $spacer*3;
-    text-shadow: 2px 2px 20px $black;
+    font-size: $spacer*2;
+  }
+
+  .brand-heading {
+    font-size: $spacer*9;
+    line-height: $spacer*9;
+  }
+
+  .tagline {
+    font-size: $spacer*2;
   }
 
   .page-scroll {
     svg {
       height: 75px;
-      fill: rgba($white, 0.9);
+      fill: rgba(theme-color(primary), 0.5);
     }
   }
 

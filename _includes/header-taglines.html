@@ -1,0 +1,9 @@
+<div id="taglinesCarousel" class="carousel slide w-100" data-ride="carousel">
+  <div class="carousel-inner">
+    {% for tagline in about.taglines %}
+    <div class="carousel-item {% if forloop.first %} active {%endif%}">
+      <h4 class="tagline my-3">{{ tagline }}</h4>
+    </div>
+    {% endfor %}
+  </div>
+</div>

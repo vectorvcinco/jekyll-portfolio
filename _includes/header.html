@@ -4,25 +4,20 @@
 
 <header class="intro-img text-white text-center">
 
-    <div class="container">
+  <div class="container d-flex align-items-center flex-column h-100">
+    <div>
       <div class="intro-welcome">{{ about.welcome }}</div>
       <br>
       <h1 class="brand-heading">{{ about.firstname }}<br><span class="text-primary">{{ about.lastname }}</span></h1>
-      <hr class="light">
-      <div class="carousel slide">
-        <div class="carousel-inner">
-          {% for tagline in about.taglines %}
-          <div class="item {% if forloop.first %} active {%endif%}">
-            <h4>{{ tagline }}</h4>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="page-scroll">
-        <a href="#about" class="border border-white rounded-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"/></svg>
-        </a>
-      </div>
     </div>
+
+    {% include header-taglines.html %}
+
+    <div class="page-scroll mt-auto mb-5">
+      <a href="#about">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"/></svg>
+      </a>
+    </div>
+  </div>
 
 </header>
