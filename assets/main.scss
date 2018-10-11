@@ -1,5 +1,11 @@
 ---
 ---
+@mixin respond-to ($val, $query) {
+  @media ($val: $query) {
+    @content
+  }
+}
+
 @import "variables";
 @import "bootstrap/bootstrap";
 @import "bootstrap/bootstrap-grid";
