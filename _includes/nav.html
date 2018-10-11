@@ -13,6 +13,9 @@
     <div class="navbar-nav">
       <a data-scroll class="nav-item nav-link active" href="#about">ABOUT</a>
       <a data-scroll class="nav-item nav-link" href="#portfolio">PORTFOLIO</a>
+      {% if site.cvdownload %}
+      <a data-scroll class="nav-item nav-link" href="{{ site.cvdownload }}">DOWNLOAD CV</a>
+      {% endif %}
     </div>
   </div>
   {% else %}
